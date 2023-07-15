@@ -60,8 +60,10 @@ int main(int, char**)
 	std::string *s = new std::string[3];
 	for (int i = 0; i < 3; i++)
 	{
-		str[i] = "This is string # " + std::to_string(i);
-		s[i] = "This is string # " + std::to_string(i);;
+		std::stringstream ss;
+		ss << "This is string # " << i;
+		str[i] = ss.str();
+		s[i] = ss.str();
 	}
 	std::cout << "====================" << std::endl;
 	{

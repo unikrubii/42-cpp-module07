@@ -3,6 +3,7 @@
 
 # include <iostream>
 # include <exception>
+# include <sstream>
 
 template <typename T>
 class Array
