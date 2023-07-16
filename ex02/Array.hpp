@@ -25,7 +25,7 @@ class Array
 		Array		&operator=( const Array &rhs );
 		// Array		*operator=( const Array *rhs );
 		T			&operator[]( int i );
-		const T		&operator[] (int i ) const;
+		const T		&operator[] ( int i ) const;
 
 		// Member functions
 		size_t	getSize() const;
