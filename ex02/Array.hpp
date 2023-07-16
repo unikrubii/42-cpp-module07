@@ -23,7 +23,6 @@ class Array
 
 		// Operator overloads
 		Array		&operator=( const Array &rhs );
-		// Array		*operator=( const Array *rhs );
 		T			&operator[]( int i );
 		const T		&operator[] ( int i ) const;
 

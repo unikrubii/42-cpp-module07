@@ -41,18 +41,6 @@ Array<T> &Array<T>::operator=( const Array &rhs ) {
 	return *this;
 }
 
-// template <typename T>
-// Array<T> *Array<T>::operator=( const Array *rhs ) {
-// 	if ( _arr ) {
-// 		delete [] _arr;
-// 	}
-// 	if ( this != rhs ) {
-// 		_arr = new T[ rhs->getSize() ];
-// 		_size = rhs->getSize();
-// 	}
-// 	return *this;
-// }
-
 template <typename T>
 T &Array<T>::operator[]( int i ) {
 	if ( i < 0 || i >= static_cast<int>( _size ) )
